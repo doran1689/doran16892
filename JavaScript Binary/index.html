@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Convert Number Bases</title>
+    <link rel="stylesheet" href="myCSS.css">
+    <script src="myScript.js"></script>
+</head>
+<body>
+<form name="toBinary">
+    <h2>Convert any base 10 number to base 2!</h2>
+    Place Base 10 Number Here:<input type="number" name="number2">
+    <button type="button" onclick="document.toBinary.result.value=tenToSmall()">toBINARY</button>
+    <br><br>
+    <input type="text" style="border-style: none" name="result" readonly="readonly">
+</form>
+<br><br>
+<form name="fromBinary">
+    <h2>Convert any base 2 number to base 10!</h2>
+    Place Base 2 Number Here:<input type="number" name="number">
+    <button type="button" onclick="document.fromBinary.result.value=smallToTen()">fromBINARY</button>
+    <br><br>
+    <input type="text" name="result" style="border-style: none" readonly="readonly">
+</form>
+<br><br>
+<form name="fromBase">
+    <h2>Convert any positive number in base 2-10 to another base!</h2>
+    Place Number Here:<input type="number" name="number">
+    <br><br>
+    Place Base Here:<input type="number" name="base">
+    <br><br>
+    Place New Base Here:<input type="number" name="base2">
+    <button type="button" onclick="document.fromBase.result.value=xToy()">fromBase</button>
+    <br><br>
+    <input type="text" name="result" style="border-style: none" readonly="readonly">
+</form>
+</body>
+</html>
